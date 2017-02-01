@@ -1,0 +1,7 @@
+<hr> - a line between paragraphs
+
+alt in img src - alternative text to the image
+
+<br> line break 
+
+<pre> </pre> - text inside defines pre-fomatted text. Formatting will not be changed.

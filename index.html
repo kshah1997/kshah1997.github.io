@@ -1,1 +1,91 @@
-Hello World
+<head>
+
+<title> Hello World </title>
+
+<link rel="stylesheet" href= "stylesheet.css">
+
+<h1> This is a header! </h1>
+
+</head>
+
+<body>
+
+<div class = "fun">
+
+<p title = "Mouse hovering" align="center"> Hello, world! </p>
+
+</div>
+
+
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+</ul>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+<li type="square"> yes </li>
+<li type="square"> no </li>
+<li> <img style="height:25px;width:25px" src = "https://www.royalcanin.com/~/media/Royal-Canin/Subpage-Hero-Images/150327_Hero_kit.ashx"> </li>
+
+<a href="http://google.com" target="_blank" >Click here to go to Google</a>
+
+
+<h1> This is a cool website </h1>
+<h3> This is h3 </h3>
+
+<div class="box" id="div1">Box1</div> <!--  -->
+<div class="box" id="div2">Box2</div>
+<div class="box" id="div3">Box3</div>
+
+<iframe align = "left" width = "400" height="300" src="https://www.youtube.com/embed/PT2_F-1esPk"></iframe>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click Me</button>
+
+<p align = "bottom" id="demo"> </p>
+
+<img style="height:400px;width:400px" src = "https://www.royalcanin.com/~/media/Royal-Canin/Subpage-Hero-Images/150327_Hero_kit.ashx"/> 
+
+
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+
+</html>

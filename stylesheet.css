@@ -1,0 +1,84 @@
+
+/*
+
+This is a comment
+
+*/
+
+p{
+	background-color: blue;
+}
+
+h1{
+	font-style: italic;
+}
+
+h3{
+	color: green;
+}
+
+body{
+	background-color: #FF2823;
+}
+
+
+
+#div1{
+	background-color: purple;
+
+}
+
+
+div.box{
+	width: 10%;
+	height: 10%;
+	float: left;
+	border: 1px blue solid;
+}
+
+div.fun{
+	font-family: sans-serif; font-style: bold;
+}
+
+button{
+	border: 2px red solid;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
